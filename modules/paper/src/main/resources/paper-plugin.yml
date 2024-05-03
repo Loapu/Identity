@@ -1,0 +1,7 @@
+name: ${pluginName.capitalize()}
+version: ${version}
+main: ${group}.${pluginName}.${name}.${pluginName.capitalize()}Plugin
+api-version: "1.20"
+author: ${author}
+description: ${description}
+loader: ${group}.${pluginName}.${name}.${pluginName.capitalize()}Loader

@@ -1,0 +1,31 @@
+[versions]
+# Gradle
+shadow = "8.1.1"
+minotaur = "2.+"
+paperweight = "1.+"
+# Common
+configurate = "4.1.2"
+adventure = "4.16.0"
+# Plugins
+paper = "1.20.6-R0.1-SNAPSHOT"
+commandApi = "9.4.0"
+anvilGui = "1.9.2-SNAPSHOT"
+
+[libraries]
+# Gradle
+shadow = { module = "com.github.johnrengelman:shadow", version.ref = "shadow" }
+minotaur = { module = "com.modrinth.minotaur:Minotaur", version.ref = "minotaur" }
+# Common
+configurate-yaml = { module = "org.spongepowered:configurate-yaml", version.ref = "configurate" }
+adventure = { module = "net.kyori:adventure-api", version.ref = "adventure" }
+adventure-logger = { module = "net.kyori:adventure-text-logger-slf4j", version.ref = "adventure" }
+minimessage = { module = "net.kyori:adventure-text-minimessage", version.ref = "adventure" }
+# Plugins
+paper = { module = "io.papermc.paper:paper-api", version.ref = "paper" }
+commandApi-bukkit = { module = "dev.jorel:commandapi-bukkit-shade-mojang-mapped", version.ref = "commandApi" }
+anvilGui = { module = "net.wesjd:anvilgui", version.ref = "anvilGui" }
+
+[plugins]
+shadow = { id = "com.github.johnrengelman.shadow", version.ref = "shadow" }
+minotaur = { id = "com.modrinth.minotaur", version.ref = "minotaur" }
+paperweight-userdev = { id = "io.papermc.paperweight.userdev", version.ref = "paperweight" }
